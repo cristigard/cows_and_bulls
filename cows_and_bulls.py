@@ -9,14 +9,14 @@ def cow_bull(user_number, random_number):
     return cows_bulls
 
 playing=True
-random_number=str(random.randint(100,999))
+random_number=str(random.randint(1000,9999))
 guessed=0
 while playing:
     guessed+=1
     print(random_number)
-    user_number=input(str("Type number from 100 to 999: "))
+    user_number=input(str("Type number from 1000 to 9999: "))
     result = cow_bull(user_number,random_number)
-    if result[0]<3:
+    if result[0]<4:
         print("Cows: ", result[0], "Bulls:",result[1])
     else:
         if guessed==1:
