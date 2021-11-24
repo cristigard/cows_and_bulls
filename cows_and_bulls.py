@@ -33,6 +33,7 @@ while cow<4:
     for index,value in enumerate(random_number_list):
             if random_number_list[index]==user_inuput_list[index]:
                 cow+=1
+            #dont understand why 'elif user_inuput_list[index] in random_number_list dont work'                 
             elif random_number_list[index] in user_inuput_list:
                 bull+=1
     else:
